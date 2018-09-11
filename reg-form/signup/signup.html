@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SignUp</title>
+    <link rel="stylesheet" href="signup.css">
+  </head>
+  <body>
+  <div>
+    <table>
+      <form action="send.php" method="post">
+        <th colspan="3"><h1>Create new account</h1></th>
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" name="fname" placeholder="First Name" required>
+              <input type="text" name="mname" placeholder="Middle Name">
+              <input type="text" name="lname" placeholder="Last Name"></td>
+        </tr>
+          <td>DOB:</td>
+          <td><input type="date" name="dob"></td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td><input type="radio" name="gender" value="M">Male
+              <input type="radio" name="gender" value="F">Female</td>
+        </tr>
+        <tr>
+          <td>Address:</td>
+          <td><input type="text" name="address" size="40" placeholder="Street address" required>
+              <input type="text" name="state" placeholder="State" required>
+              <input type="text" name="city" placeholder="City" required></td>
+
+        </tr>
+        <tr>
+          <td>E-mail:</td>
+          <td><input type="email" name="email" placeholder="abc@example.com" required></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input type="password" name="password" required></td>
+        </tr>
+        <tr>
+          <td>Mobile No:</td>
+          <td><input type="number" name="mobile" required></td>
+        </tr>
+        <tr>
+          <td>I Agree to Terms of use</td>
+          <td><input type="checkbox" name="condition" required>Confirm</td>
+        </tr>
+        <tr><td><br></td></tr>
+        <tr>
+          <td colspan="3" class="wrap"><button name="submit" type="submit"><b>Create</b></button>
+              <button name="clear" type="reset"><b>Clear</b></button></td>
+        </tr>
+        <tr>
+          <td><a href="../login/login.html">Login</td>
+        </tr>
+    </table>
+  </div>
+  </body>
+</html>
